@@ -10,11 +10,11 @@
       <div class="usermenu">
         <form action="#" method="POST">
           <label for="search-form">Поиск по сайту</label>
-          <input type="search" id="search-form" placeholder="Поиск по сайту">
+          <input class="usermenu__search" type="search" id="search-form" placeholder="Поиск по сайту">
         </form>
-        <a class="login" href="#">Войти</a>
-        <a class="compare" href="#">Сравнить</a>
-        <a class="cart" href="#">Корзина</a>
+        <a class="usermenu__login" href="#">Войти</a>
+        <a class="usermenu__compare" href="#">Сравнить</a>
+        <a class="usermenu__cart" href="#">Корзина</a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -37,7 +37,7 @@
                 <a class="sub-menu__link" href="blank.html">Умные часы</a>
               </li>
               <li class="sub-menu__item">
-                <a class="sub-menu__link" href="blank.html">Квадрокоптер</a>
+                <a class="sub-menu__link" href="blank.html">Квадрокоптеры</a>
               </li>
             </ul>
           </li>
@@ -55,14 +55,65 @@
     </header>
     <main class="page-main">
       <h1>Интернет-магазин "DEVICE"</h1>
+
       <section class="promo">
         <h2>Промо-товары</h2>
+
       </section>
 
       <section class="popular">
         <h2>Популярные товары</h2>
+        <ul class="popular__list">
+          <li class="popular__item">
+            <a class="popular__link" href="catalog.html">
+              <figure class="popular-image-wrapper">
+                <img class="popular__image" src="img/popular-1.svg" alt="Очки виртуальной реальности" width="97" height="55">
+              </figure>
+              <p>Виртуальная реальность</p>
+            </a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link" href="catalog.html">
+              <figure class="popular-image-wrapper">
+                <img class="popular__image" src="img/popular-2.svg" alt="Монопод" width="86" height="117">
+              </figure>
+              <p>Моноподы для селфи</p>
+            </a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link" href="catalog.html">
+              <figure class="popular-image-wrapper">
+                <img class="popular__image" src="img/popular-3.svg" alt="Экшн-камера" width="71" height="87">
+              </figure>
+              <p>Экшн-камеры</p>
+            </a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link" href="catalog.html">
+              <figure class="popular-image-wrapper">
+                <img class="popular__image" src="img/popular-4.svg" alt="Фитнес-браслет" width="107" height="65">
+              </figure>
+              <p>Фитнес-браслеты</p>
+            </a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link" href="catalog.html">
+              <figure class="popular-image-wrapper">
+                <img class="popular__image" src="img/popular-5.svg" alt="Умные часы" width="56" height="98">
+              </figure>
+              <p>Умные часы</p>
+            </a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link" href="catalog.html">
+              <figure class="popular-image-wrapper">
+                <img class="popular__image" src="img/popular-6.svg" alt="Квадрокоптер" width="132" height="69">
+              </figure>
+              <p>Квадрокоптеры</p>
+            </a>
+          </li>
+        </ul>
       </section>
-
       <section class="service">
         <h2>Преимущества сервиса</h2>
       </section>
