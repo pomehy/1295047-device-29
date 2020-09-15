@@ -7,16 +7,24 @@
   <body>
     <header class="page-header">
       <a class="logo" href="index.html">DEVICE</a>
-      <div class="usermenu">
-        <form action="#" method="POST">
-          <label for="search-form">Поиск по сайту</label>
-          <input class="usermenu__search" type="search" id="search-form" placeholder="Поиск по сайту">
-        </form>
-        <a class="usermenu__login" href="#">Войти</a>
-        <a class="usermenu__compare" href="#">Сравнить</a>
-        <a class="usermenu__cart" href="#">Корзина</a>
-      </div>
       <nav class="main-nav">
+        <div class="user-menu-wrapper">
+          <form action="#" method="POST">
+            <label for="search-form">Поиск по сайту</label>
+            <input class="usermenu__search" type="search" id="search-form" placeholder="Поиск по сайту">
+          </form>
+          <ul class="user-menu">
+            <li>
+              <a class="user-menu__login" href="#">Войти</a>
+            </li>
+            <li>
+              <a class="user-menu__compare" href="#">Сравнить</a>
+            </li>
+            <li>
+              <a class="user-menu__cart" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__item sub-menu">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
@@ -55,12 +63,91 @@
     </header>
     <main class="page-main">
       <h1>Интернет-магазин "DEVICE"</h1>
-
-      <section class="promo">
+      <section class="promo slider">
         <h2>Промо-товары</h2>
+        <ul class="slider__list">
+          <li class="slider__item">
+            <figure class="slider-image-wrapper">
+              <img class="slider__image" src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
+            </figure>
+            <div class="slider-content-wrapper">
+              <p><b>Делай селфи, как Бен Стиллер!</b></p>
+              <p>Самая длинная палка для селфи доступна в нашем магазине.
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a href="catalog.html">Подробнее</a>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>8,5 м</td>
+                    <td>5 кг</td>
+                    <td>Карбон</td>
+                  </tr>
+                  <tr>
+                    <td>Длина палки</td>
+                    <td>Вес палки</td>
+                    <td>Материал</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="slider__item">
+            <figure class="slider-image-wrapper">
+              <img class="slider__image" src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
+            </figure>
+            <div class="slider-content-wrapper">
+              <p><b>Худеем правильно!</b></p>
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a href="catalog.html">Подробнее</a>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>48 часов</td>
+                  </tr>
+                  <tr>
+                    <td>Без подзарядки</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+          <li class="slider__item">
+            <figure class="slider-image-wrapper">
+              <img class="slider__image" src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
+            </figure>
+            <div class="slider-content-wrapper">
+              <p><b>Порхает как бабочка, жалит как пчела!</b></p>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+                мощным лазером, замаскированным под стандартную камеру.
+                </p>
+              <a href="catalog.html">Подробнее</a>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>800 м</td>
+                    <td>500 м</td>
+                  </tr>
+                  <tr>
+                    <td>Дальность полета</td>
+                    <td>Радиус поражения</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+        <ol class="slider__control">
+          <li>
 
+          </li>
+          <li>
+
+          </li>
+          <li>
+
+          </li>
+        </ol>
       </section>
-
       <section class="popular">
         <h2>Популярные товары</h2>
         <ul class="popular__list">
@@ -159,7 +246,6 @@
           <img src="img/logo-4.svg" alt="" width="260" height="100">
         </figure>
       </section>
-
       <section class="about">
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика,
@@ -173,7 +259,6 @@
         </ul>
         <a href="blank.html">Подробнее о нас</a>
       </section>
-
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
@@ -184,9 +269,8 @@
         <a href="blank.html">Напишите нам</a>
       </section>
     </main>
-
     <footer class="page-footer">
-    </footer>
 
+    </footer>
   </body>
 </html>
