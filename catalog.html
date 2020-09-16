@@ -64,9 +64,8 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1>Каталог товаров</h1>
     <section class="page-main__header">
-      <h2>Моноподы для селфи</h2>
+      <h1>Моноподы для селфи</h1>
       <ul class="breadcrumb">
         <li class="breadcrumb__item">
           <a href="" class="breadcrumb__link">Главная</a>
@@ -79,12 +78,91 @@
         </li>
       </ul>
     </section>
-
-
-
-
+    <section class="page-main__content catalog">
+      <h2>Каталог моноподов</h2>
+      <section class="catalog__filter">
+        <h3>Фильтр товаров</h3>
+        <form action="">Форма для ввода данных</form>
+      </section>
+      <section class="catalog__products">
+        <h3>Товары магазина</h3>
+        <section class="catalog__sort sort">
+          <h4>Сортировка:</h4>
+          <ul class="sort__list">
+            <li class="sort__item">
+              <a class="sort__link" href="#">По цене</a>
+            </li>
+            <li class="sort__item">
+              <a class="sort__link" href="#">По типу</a>
+            </li>
+            <li class="sort__item">
+              <a class="sort__link" href="#">По популярности</a>
+            </li>
+          </ul>
+          <ul class="sort__button">
+            <li class="sort__item">
+              <button class="sort__button" type="button"><span>Вверх</span></button>
+            </li>
+            <li class="sort__item">
+              <button class="sort__button" type="button"><span>Вниз</span></button>
+            </li>
+          </ul>
+        </section>
+        <section class="products">
+          <h4>Отсортированные товары</h4>
+          <ul class="products__list">
+            <li class="products__list">
+              <div class="product-image-wrapper">
+                <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+                <button type="button">В корзину</button>
+                <button type="button">Добавить к сравнению</button>
+              </div>
+              <a href="#" class="products__link">
+                <p>Любительская селфи-палка <span>500 руб.</span></p>
+              </a>
+            </li>
+            <li class="products__list">
+              <div class="product-image-wrapper">
+                <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+                <button type="button">В корзину</button>
+                <button type="button">Добавить к сравнению</button>
+              </div>
+              <a href="#" class="products__link">
+                <p>Профессиональная селфи-палка <span>1 500 руб.</span></p>
+              </a>
+            </li>
+            <li class="products__list">
+              <div class="product-image-wrapper">
+                <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+                <button type="button">В корзину</button>
+                <button type="button">Добавить к сравнению</button>
+              </div>
+              <a href="#" class="products__link">
+                <p>Непотопляемая селфи-палка <span>2 500 руб.</span></p>
+              </a>
+            </li>
+            <li class="products__list products__list--new">
+              <div class="product-image-wrapper">
+                <img src="img/item-4.jpg" alt="Селфи-палка в виде руки" width="360" height="380">
+                <button type="button">В корзину</button>
+                <button type="button">Добавить к сравнению</button>
+              </div>
+              <a href="#" class="products__link">
+                <p>Селфи-палка «Следуй за мной» <span>4 900 руб.</span></p>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div class="paginator">
+          <a class="paginator__prev" href="#">Назад</a>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a class="paginator__next" href="#">Вперёд</a>
+        </div>
+      </section>
+    </section>
   </main>
-
   <footer class="page-footer">
     <section class="page-footer__user-menu">
       <h2>Пользовательское меню</h2>
