@@ -11,17 +11,17 @@
         <div class="user-menu-wrapper">
           <form action="#" method="POST">
             <label for="search-form">Поиск по сайту</label>
-            <input class="usermenu__search" type="search" id="search-form" placeholder="Поиск по сайту">
+            <input class="main-nav__search" type="search" id="search-form" placeholder="Поиск по сайту">
           </form>
           <ul class="user-menu">
             <li>
               <a class="user-menu__login" href="#">Войти</a>
             </li>
             <li>
-              <a class="user-menu__name user-menu__name--disabled" href="#">Валентин Петухов</a>
+              <a class="user-menu__name user-menu__name--hidden" href="#">Валентин Петухов</a>
             </li>
             <li>
-              <a class="user-menu__logout user-menu__logout--disabled" href="#">Выйти</a>
+              <a class="user-menu__logout user-menu__logout--hidden" href="#">Выйти</a>
             </li>
             <li>
               <a class="user-menu__compare" href="#">Сравнить</a>
@@ -207,9 +207,9 @@
           </li>
         </ul>
       </section>
-      <section class="service">
+      <section class="service service-slider">
         <h2>Преимущества сервиса</h2>
-        <ul class="service__list">
+        <ul class="service__list service-slider__nav">
           <li class="service__item">
             <a class="service__link" href="#">Доставка</a>
           </li>
@@ -220,22 +220,24 @@
             <a class="service__link" href="#">Кредит</a>
           </li>
         </ul>
-        <section class="service__deleviry">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему
+        <ul class="service__description service-slider__list">
+          <li class="service__deleviry service-slider__item">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему
             подъезду совершенно бесплатно! Ведь мы неплохо
             заработаем, поднимая его на ваш этаж.</p>
-        </section>
-        <section class="service__warranty">
-          <h3>Гарантия</h3>
-          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —
-            не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-        </section>
-        <section class="service__credit">
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты
-            подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-        </section>
+          </li>
+          <li class="service__warranty service-slider__item">
+            <h3>Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —
+              не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </li>
+          <li class="service__credit service-slider__item">
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты
+              подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </li>
+        </ul>
       </section>
       <section class="partners">
         <h2>Партнеры и производители</h2>
@@ -298,10 +300,10 @@
             <a class="user-menu__login" href="#">Войти</a>
           </li>
           <li>
-            <a class="user-menu__name user-menu__name--disabled" href="#">Валентин Петухов</a>
+            <a class="user-menu__name user-menu__name--hidden" href="#">Валентин Петухов</a>
           </li>
           <li>
-            <a class="user-menu__logout user-menu__logout--disabled" href="#">Выйти</a>
+            <a class="user-menu__logout user-menu__logout--hidden" href="#">Выйти</a>
           </li>
           <li>
             <a class="user-menu__compare" href="#">Сравнить</a>
