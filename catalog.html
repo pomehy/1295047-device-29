@@ -13,11 +13,11 @@
       <div class="user-menu-wrapper">
         <form action="#" method="POST">
           <label for="search-form">Поиск по сайту</label>
-          <input class="usermenu__search" type="search" id="search-form" placeholder="Поиск по сайту">
+          <input class="main-nav__search" type="search" id="search-form" placeholder="Поиск по сайту">
         </form>
         <ul class="user-menu">
           <li>
-            <a class="user-menu__login user-menu__login--disabled" href="#">Войти</a>
+            <a class="user-menu__login user-menu__login--hidden" href="#">Войти</a>
           </li>
           <li>
             <a class="user-menu__name" href="#">Валентин Петухов</a>
@@ -107,10 +107,10 @@
           </ul>
           <ul class="sort__button">
             <li class="sort__item">
-              <button class="sort__button" type="button"><span>Вверх</span></button>
+              <a class="sort__button" href="#"><span>Вверх</span></a>
             </li>
             <li class="sort__item">
-              <button class="sort__button" type="button"><span>Вниз</span></button>
+              <a class="sort__button" href="#"><span>Вниз</span></a>
             </li>
           </ul>
         </section>
@@ -147,7 +147,7 @@
                 <p>Непотопляемая селфи-палка <span>2 500 руб.</span></p>
               </a>
             </li>
-            <li class="products__item products__list--new">
+            <li class="products__item products__item--new">
               <div class="product-image-wrapper">
                 <img src="img/item-4.jpg" alt="Селфи-палка в виде руки" width="360" height="380">
                 <button type="button">В корзину</button>
@@ -175,24 +175,13 @@
       <a class="logo logo--color" href="#">DEVICE</a>
       <ul class="user-menu">
         <li>
-          <a class="user-menu__login user-menu__login--disabled" href="#">Войти</a>
+          <a class="user-menu__login user-menu__login--hidden" href="#">Войти</a>
         </li>
         <li>
           <a class="user-menu__name" href="#">Валентин Петухов</a>
         </li>
         <li>
           <a class="user-menu__logout" href="#">Выйти</a>
-        </li>
-        <li>
-          <a class="user-menu__compare" href="#">Сравнить</a>
-        </li>
-        <li>
-          <a class="user-menu__cart" href="#">Корзина</a>
-        </li>
-      </ul>
-      <ul class="user-menu">
-        <li>
-          <a class="user-menu__login" href="#">Войти</a>
         </li>
         <li>
           <a class="user-menu__compare" href="#">Сравнить</a>
