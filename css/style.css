@@ -353,8 +353,10 @@ img {
   letter-spacing: 0.2em;
 }
 
-.service__link:active {
+.service__link:active,
+.service__link:focus {
   background-color: var(--basic-black);
+  color: var(--special-yellow-light);
 }
 
 .service__description {
