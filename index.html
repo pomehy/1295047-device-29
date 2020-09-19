@@ -13,24 +13,25 @@
       </a>
       <nav class="main-nav">
         <div class="user-menu-wrapper">
-          <form action="#" method="POST">
+          <form class="main-nav__search search-form" action="#" method="POST">
             <label class="visually-hidden" for="search-form">Поиск по сайту</label>
-            <input class="main-nav__search" type="search" id="search-form" placeholder="Поиск по сайту">
+            <input class="search-form__input" type="search" id="search-form" placeholder="Поиск по сайту">
+            <button class="search-form__button" type="button">Найти</button>
           </form>
           <ul class="user-menu">
-            <li>
+            <li class="user-menu__item">
               <a class="user-menu__login" href="#">Войти</a>
             </li>
-            <li>
-              <a class="user-menu__name user-menu__name--hidden" href="#">Валентин Петухов</a>
+            <li class="user-menu__item user-menu__item--hidden">
+              <a class="user-menu__name" href="#">Валентин Петухов</a>
             </li>
-            <li>
-              <a class="user-menu__logout user-menu__logout--hidden" href="#">Выйти</a>
+            <li class="user-menu__item user-menu__item--hidden">
+              <a class="user-menu__logout" href="#">Выйти</a>
             </li>
-            <li>
+            <li class="user-menu__item">
               <a class="user-menu__compare" href="#">Сравнить</a>
             </li>
-            <li>
+            <li class="user-menu__item">
               <a class="user-menu__cart" href="#">Корзина</a>
             </li>
           </ul>
@@ -302,19 +303,19 @@
           <img src="img/device-logo-yellow.svg" alt="" width="165" height="35">
         </a>
         <ul class="user-menu user-menu--footer">
-          <li>
+          <li class="user-menu__item">
             <a class="user-menu__login" href="#">Войти</a>
           </li>
-          <li>
-            <a class="user-menu__name user-menu__name--hidden" href="#">Валентин Петухов</a>
+          <li class="user-menu__item user-menu__item--hidden">
+            <a class="user-menu__name" href="#">Валентин Петухов</a>
           </li>
-          <li>
-            <a class="user-menu__logout user-menu__logout--hidden" href="#">Выйти</a>
+          <li class="user-menu__item user-menu__item--hidden">
+            <a class="user-menu__logout" href="#">Выйти</a>
           </li>
-          <li>
+          <li class="user-menu__item">
             <a class="user-menu__compare" href="#">Сравнить</a>
           </li>
-          <li>
+          <li class="user-menu__item">
             <a class="user-menu__cart" href="#">Корзина</a>
           </li>
         </ul>
