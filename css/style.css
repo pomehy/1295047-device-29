@@ -81,3 +81,282 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.button {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--special-yellow-dark);
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* header */
+
+.main-header {
+  background-color: var(--special-yellow-light);
+}
+
+/* logo */
+
+.logo {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 47px;
+  color: var(--basic-black);
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+
+/* main-nav */
+
+.main-nav a {
+  color: var(--basic-black);
+}
+
+.main-nav a:hover {
+  opacity: 0.6;
+}
+
+.main-nav a:active {
+  opacity: 0.3;
+}
+
+.main-nav__search {
+  line-height: 20px;
+}
+
+.main-nav__link {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.sub-menu__link {
+  font: inherit;
+  line-height: 20px;
+}
+
+/* promo slider */
+
+.slider__title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.slider__description {
+  font: inherit;
+  line-height: 20px;
+}
+
+.parameters__value td {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+}
+
+.parameters__name td {
+  font: inherit;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+/* popular */
+
+.popular__link,
+.popular__link:hover {
+  color: var(--basic-black);
+}
+
+.popular__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.popular-image-wrapper {
+  background-color: var(--special-yellow-light);
+}
+
+.popular-image-wrapper:hover,
+.popular-image-wrapper:active {
+  background-color: var(--special-yellow-dark);
+}
+
+.popular__link:active .popular__image {
+  opacity: .3
+}
+
+.popular__name {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+/* service */
+
+.service {
+  background-color: var(--basic-grey-light);
+}
+
+.service__title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.service__link:active {
+  background-color: var(--basic-black);
+}
+
+.service__description {
+  font: inherit;
+  letter-spacing: 0.1em;
+}
+
+/* partners */
+
+/* about */
+
+.about__title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.delivery-item {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* contacts */
+
+.contacts__title {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+/* footer */
+
+.main-footer {
+  background-color: var(--basic-dark);
+}
+
+.user-menu--footer a {
+  color: var(--basic-white);
+  opacity: 0.7;
+}
+
+.user-menu--footer a:hover {
+  opacity: 1;
+}
+
+.user-menu--footer a:active {
+  opacity: 0.3;
+}
+
+/* main-footer__info */
+
+.main-footer__adress {
+  color: var(--basic-white);
+}
+
+.main-footer__phone {
+  color: var(--basic-white);
+}
+
+/* footer-nav */
+
+.footer-nav__link {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.footer-nav__link:hover {
+  opacity: 0.6;
+}
+
+.footer-nav__link:active {
+  opacity: 0.3;
+}
+
+/* social */
+
+.social__link {
+  opacity: 0.6;
+}
+
+.social__link:hover {
+  opacity: 0.3;
+}
+
+.social__link:active {
+  opacity: 0.1;
+}
+
+.copyright-link:hover {
+  opacity: 0.6;
+}
+
+.copyright-link:active {
+  opacity: 0.3;
+}
