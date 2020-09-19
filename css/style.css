@@ -359,6 +359,11 @@ img {
   color: var(--special-yellow-light);
 }
 
+.service__link--active {
+  background-color: var(--basic-black);
+  color: var(--special-yellow-light);
+}
+
 .service__description {
   font: inherit;
   letter-spacing: 0.1em;
