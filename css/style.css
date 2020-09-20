@@ -64,7 +64,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 28px;
   font-weight: 300;
@@ -99,7 +99,7 @@ img {
   position: relative;
   z-index: 1;
 
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -223,7 +223,7 @@ img {
 }
 
 .main-nav__link {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -248,7 +248,7 @@ img {
 /* page-main */
 
 .page-main__title {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 47px;
@@ -277,7 +277,7 @@ img {
 /* promo slider */
 
 .slider__title {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 47px;
@@ -290,7 +290,7 @@ img {
 }
 
 .parameters__value td {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 36px;
@@ -330,7 +330,7 @@ img {
 }
 
 .popular__name {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -345,7 +345,7 @@ img {
 }
 
 .service__title {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 47px;
@@ -374,7 +374,7 @@ img {
 /* about */
 
 .about__title {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 47px;
@@ -383,7 +383,7 @@ img {
 }
 
 .delivery-item {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -393,7 +393,7 @@ img {
 /* contacts */
 
 .contacts__title {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 47px;
@@ -408,7 +408,7 @@ img {
 }
 
 .catalog__filter h3 {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -426,7 +426,7 @@ img {
 }
 
 .sort__title {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -436,7 +436,7 @@ img {
 }
 
 .sort__link {
-  font-family: Open Sans;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -493,7 +493,7 @@ img {
 /* products */
 
 .products__link {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -503,7 +503,7 @@ img {
 }
 
 .products__price {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -542,7 +542,7 @@ img {
 }
 
 .paginator a {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -610,7 +610,7 @@ img {
 /* footer-nav */
 
 .footer-nav__link {
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
