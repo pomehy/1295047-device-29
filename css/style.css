@@ -463,7 +463,7 @@ img {
   width: 18px;
   height: 18px;
 
-  background-image: url(../img/icon-up-dir.svg);
+  background-image: url('../img/icon-up-dir.svg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
