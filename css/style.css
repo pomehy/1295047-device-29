@@ -44,11 +44,16 @@
 
 :root {
   --basic-black: #000000;
+  --basic-back-transparent-10: rgba(0, 0, 0, 0.1);
+  --basic-back-transparent-30: rgba(0, 0, 0, 0.3);
+  --basic-back-transparent-60: rgba(0, 0, 0, 0.6);
+
   --basic-dark: #363636;
   --basic-grey: #464646;
   --basic-half-grey: #7e7e7e;
   --basic-grey-light: #e5e5e5;
   --basic-white: #ffffff;
+  --basic-white-transparent-30: rgba(255, 255, 255, 0.3);
 
   --special-yellow-dark: #f0c52e;
   --special-yellow-light: #f7e296;
@@ -133,7 +138,7 @@ img {
 }
 
 .button:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--basic-back-transparent-30);
 }
 
 /* header */
@@ -183,12 +188,12 @@ img {
 }
 
 .search-form__input::placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--basic-back-transparent-30);
   line-height: 20px;
 }
 
 .search-form__input:hover {
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--basic-back-transparent-60);
 }
 
 .search-form__input:focus {
@@ -218,7 +223,7 @@ img {
 }
 
 .search-form__button:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--basic-white-transparent-30);
   background-color: var(--basic-black);
   opacity: 1;
 }
@@ -359,7 +364,8 @@ img {
 }
 
 .popular__link:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--basic-back-transparent-30);
+
 }
 
 .popular-image-wrapper {
@@ -670,7 +676,7 @@ img {
 
 .paginator__prev:active,
 .paginator__next:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--basic-back-transparent-30);
 }
 
 /* footer */
