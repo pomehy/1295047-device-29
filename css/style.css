@@ -109,15 +109,15 @@ img {
 .page-body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+
   min-height: 100%;
   padding-top: 40px;
   align-content: start;
 }
 
 .page-header {
-  width: 1160px;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 40px;
 }
 
 
@@ -176,7 +176,11 @@ img {
 /* header */
 
 .main-header {
+  width: 1160px;
+  padding: 0 60px;
   background-color: var(--special-yellow-light);
+
+  box-sizing: border-box;
 }
 
 
@@ -308,7 +312,7 @@ img {
 
 .sub-menu__list {
   display: none;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: max-content 1fr 1fr;
   margin: 0;
   padding: 0;
 
@@ -335,6 +339,14 @@ img {
 
 /* page-main */
 
+.page-main__header {
+  width: 1240px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 40px;
+
+  box-sizing: border-box;
+}
 
 .page-main__title {
   font-family: 'Gilroy', Arial, sans-serif;
@@ -582,30 +594,47 @@ img {
 
 /* catalog */
 
+.catalog {
+  overflow-x: hidden;
+}
+
+
 .catalog-wrapper {
   display: grid;
   grid-template-columns: auto 2fr;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+}
+
+.catalog__products {
+  position: relative;
 }
 
 
 .filter {
   position: relative;
   min-width: 328px;
+  padding-left: 60px;
+
   background-color: var(--basic-grey-light);
+  box-sizing: border-box;
 }
 
 .filter::before {
   position: absolute;
   content: '';
-  z-index: -1;
+  z-index: 1;
   top:0;
-  right: 100%;
+  right: 268px;
 
-  width: 100vh;
+  width: 100vw;
   height: 100%;
 
   background-color: var(--basic-grey-light);
 }
+
 
 .filter__title {
   position: relative;
@@ -626,9 +655,9 @@ img {
 .filter__title::before {
   position: absolute;
   content: '';
-  z-index: -1;
+  z-index: 1;
   top: 0;
-  right: 100%;
+  right: 268px;
 
   width: 100vw;
   height: 100%;
@@ -646,7 +675,22 @@ img {
   padding-left: 72px;
 
   background-color: var(--basic-grey-light);
+
 }
+
+.sort::before {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--basic-grey-light);
+}
+
+
 
 .sort__title {
   margin: 0;
@@ -661,17 +705,6 @@ img {
   text-transform: uppercase;
 }
 
-.sort::before {
-  position: absolute;
-  content: '';
-  z-index: -1;
-  top: 0;
-  left: 100%;
-  width: 100vw;
-  height: 100%;
-
-  background-color: var(--basic-grey-light);
-}
 
 .sort__list {
   margin: 0;
