@@ -920,7 +920,6 @@ img {
 
 .main-footer__user-menu {
   position: relative;
-  display: grid;
 }
 
 .user-menu--footer a {
