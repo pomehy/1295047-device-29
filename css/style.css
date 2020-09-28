@@ -919,7 +919,18 @@ img {
 }
 
 .main-footer__user-menu {
-  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: min-content 1fr;
+}
+
+.logo--footer {
+  grid-column: 1 / 2;
+}
+
+.user-menu--footer {
+  grid-column: 2 / 3;
+  order: -1;
 }
 
 .user-menu--footer a {
