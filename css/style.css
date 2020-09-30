@@ -117,7 +117,6 @@ img {
 
 .page-header {
   margin: 0 auto;
-  padding: 0 40px;
 }
 
 
@@ -190,9 +189,7 @@ img {
   width: 1160px;
   min-height: 186px;
   padding-top: 44px;
-  padding-right: 60px;
   padding-bottom: 0;
-  padding-left: 60px;
 
   background-color: var(--special-yellow-light);
 
@@ -202,6 +199,7 @@ img {
 .main-header__logo {
   position: absolute;
   top: -20px;
+  left: 60px;
 }
 
 .logo:hover {
@@ -218,6 +216,9 @@ img {
 .main-nav {
   display: grid;
   grid-template-rows: min-content min-content;
+
+  padding-right: 60px;
+  padding-left: 60px;
 }
 
 .user-menu-wrapper {
@@ -363,7 +364,7 @@ img {
 }
 
 .main-nav__item:last-child {
-  text-align: end;
+  justify-self: end;
   margin-right: -0.2em;
 }
 
@@ -391,23 +392,36 @@ img {
   flex-direction: column;
 }
 
-.sub-menu__list {
+.sub-menu-wrapper {
+  position: absolute;
+  top: 136px;
+  left: 0;
+
   display: none;
+  width: 100%;
+  padding-left: 60px;
+
+  background-color: var(--special-yellow-light);
+
+  box-sizing: border-box;
+}
+
+.sub-menu__list {
+  display: grid;
   grid-template-columns: auto auto max-content;
   column-gap: 40px;
-  min-width: 530px;
+  width: 530px;
   margin-top: 30px;
   margin-right: 0;
   margin-bottom: 42px;
   margin-left: 0;
-  padding: 0;
+  padding-left: 0;
 
   list-style: none;
-  background-color: var(--special-yellow-light);
 }
 
-.sub-menu:hover .sub-menu__list {
-  display: grid;
+.sub-menu:hover .sub-menu-wrapper {
+  display: block;
 }
 
 .sub-menu__item {
@@ -642,6 +656,10 @@ img {
 .service__link--active {
   background-color: var(--basic-black);
   color: var(--special-yellow-light);
+}
+
+.button.service__link--active::before {
+  background-color: var(--basic-black);
 }
 
 .service__description {
