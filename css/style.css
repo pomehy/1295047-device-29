@@ -534,6 +534,10 @@ img {
 
 /* popular */
 
+.popular {
+  padding-top: 20px;
+}
+
 .popular__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -551,11 +555,18 @@ img {
 
 .popular__link:active {
   color: var(--basic-back-transparent-30);
-
 }
 
+.popular__link:active .popular__image {
+  opacity: .3
+}
+
+
 .popular-image-wrapper {
+  display: flex;
+  height: 160px;
   margin: 0;
+
   background-color: var(--special-yellow-light);
 }
 
@@ -564,17 +575,23 @@ img {
   background-color: var(--special-yellow-dark);
 }
 
-.popular__link:active .popular__image {
-  opacity: .3
+.popular__image {
+  margin: auto;
 }
 
 .popular__name {
+  margin-top: 38px;
+  margin-bottom: 20px;
   font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
+}
+
+.popular__item:nth-child(4) .popular__name {
+  letter-spacing: normal;
 }
 
 /* service */
