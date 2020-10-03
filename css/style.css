@@ -938,7 +938,25 @@ img {
 /* service */
 
 .service {
+  position: relative;
+
+  min-height: 403px;
+  margin-top: 50px;
+  padding-top: 85px;
   background-color: var(--basic-grey-light);
+}
+
+.service::before {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 115px;
+
+  content: '';
+
+  background-color: var(--basic-white);
+
 }
 
 .service-slider-wrapper {
@@ -947,11 +965,41 @@ img {
   grid-template-columns: 1fr 2fr;
 }
 
+.service-slider__nav {
+  position: relative;
+}
+
+.service-slider__nav::after {
+  position: absolute;
+  top: -70px;
+  right: 90px;
+
+  width: 7px;
+  min-height: 320px;
+
+  content: '';
+
+  background-color: var(--basic-black);
+}
+
 .service__list {
   margin: 0;
-  padding: 0;
+
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 
   list-style: none;
+}
+
+.service-slider__item {
+  position: relative;
+  display: none;
+}
+
+.service-slider__item--active {
+  display: block;
 }
 
 .service__description {
@@ -962,6 +1010,9 @@ img {
 }
 
 .service__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+
   font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -970,12 +1021,19 @@ img {
   letter-spacing: 0.2em;
 }
 
-.service__link:active {
-  background-color: var(--basic-black);
-  color: var(--special-yellow-light);
+.service__link {
+  display: block;
+  width: 160px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .service__link--active {
+  width: 277px;
+  padding-left: 15px;
+
+  text-align: start;
+
   background-color: var(--basic-black);
   color: var(--special-yellow-light);
 }
@@ -984,7 +1042,52 @@ img {
   background-color: var(--basic-black);
 }
 
-.service__description {
+.service__delivery::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 136px;
+  height: 164px;
+
+  content: '';
+
+  background-image: url(../img/decor/delivery.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service__warranty::after {
+  position: absolute;
+  top: -17px;
+  right: -17px;
+
+  width: 171px;
+  height: 195px;
+
+  content: '';
+
+  background-image: url(../img/decor/warranty.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service__credit::after {
+  position: absolute;
+  top: -21px;
+  right: 8px;
+
+  width: 156px;
+  height: 188px;
+
+  content: '';
+
+  background-image: url(../img/decor/credit.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service__text {
   font: inherit;
   letter-spacing: 0.1em;
 }
@@ -1101,6 +1204,8 @@ img {
 }
 
 .delivery-item {
+  position: relative;
+
   display: flex;
   margin-bottom: 15px;
 
@@ -1111,6 +1216,20 @@ img {
   line-height: 28px;
 }
 
+.delivery-item::before {
+  position: absolute;
+  top: 7px;
+  left: -32px;
+
+  width: 8px;
+  height: 8px;
+
+  content: '';
+
+  border-radius: 50%;
+  border: 2px solid #E5E5E5;
+  box-sizing: border-box;
+}
 
 .delivery-item:last-child {
   margin-bottom: 0;
