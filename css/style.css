@@ -944,6 +944,8 @@ img {
   margin-top: 50px;
   padding-top: 85px;
   background-color: var(--basic-grey-light);
+
+  box-sizing: border-box;
 }
 
 .service::before {
