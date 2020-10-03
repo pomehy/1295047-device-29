@@ -1125,7 +1125,25 @@ img {
 
 /* contacts */
 
+.contacts {
+  position: relative;
+}
+
+.contacts::before {
+  position: absolute;
+  top: 0;
+
+  width: 80px;
+  height: 7px;
+
+  content: '';
+
+  background-color: var(--basic-black);
+}
+
 .contacts__title {
+  margin-top: 57px;
+
   font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -1133,6 +1151,18 @@ img {
   line-height: 58px;
   letter-spacing: 0.2em;
 }
+
+.contacts__text {
+  margin-bottom: 40px;
+}
+
+.contacts__link {
+  display: inline-block;
+  width: 260px;
+  margin-top: 68px;
+  margin-bottom: 86px;
+}
+
 
 /* catalog */
 
