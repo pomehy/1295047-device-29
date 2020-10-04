@@ -725,6 +725,7 @@ img {
 
 .slider-content-wrapper {
   grid-column: 2 / 3;
+  padding-right: 60px;
 }
 
 .slider__image {
@@ -829,7 +830,7 @@ img {
 
 .slider__controls {
   position: absolute;
-  top: 316px;
+  bottom: 139px;
   right: 128px;
 
   display: flex;
@@ -1241,7 +1242,7 @@ img {
   display: inline-block;
   width: 260px;
   margin-top: 68px;
-  margin-bottom: 86px;
+  margin-bottom: 78px;
 }
 
 /* contacts */
@@ -1281,7 +1282,7 @@ img {
   display: inline-block;
   width: 260px;
   margin-top: 68px;
-  margin-bottom: 86px;
+  margin-bottom: 78px;
 }
 
 
