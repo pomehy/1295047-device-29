@@ -709,7 +709,7 @@ img {
   right: 50px;
   z-index: -1;
 
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 179px;
@@ -1405,7 +1405,7 @@ img {
   width: 100%;
   padding-top: 16px;
 
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
@@ -1485,7 +1485,7 @@ img {
 .range__price label {
   margin-right: 25px;
 
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1535,7 +1535,7 @@ img {
 .filter__item label {
   padding-left: 42px;
 
-  font-family: Open Sans;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -2201,13 +2201,14 @@ img {
 /* modal */
 
 .modal {
-  display: none;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 5;
+
+  display: none;
 
   margin: auto;
 
@@ -2255,7 +2256,7 @@ img {
   display: block;
   margin-bottom: 10px;
 
-  font-family: Gilroy;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
