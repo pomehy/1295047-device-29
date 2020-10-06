@@ -2201,6 +2201,7 @@ img {
 /* modal */
 
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -2284,13 +2285,10 @@ img {
   opacity: 0.4;
 }
 
-
-
 .write-us__form textarea:focus,
 .write-us__form input:focus {
   outline: 2px solid var(--special-yellow-light);
 }
-
 
 .write-us__form textarea {
   width: 100%;
@@ -2319,8 +2317,23 @@ img {
   width: 200px;
 }
 
+/* modal-map  */
+
 .modal-map {
-  display: none;
+  top: 120px;
+  bottom: auto;
+
+  width: 960px;
+  height: 560px;
+
+  background-color: transparent;
+  box-shadow: 0px 10px 16px var(--basic-black-transparent-15);
+
+  box-sizing: border-box;
+}
+
+.modal-map iframe {
+  border: none;
 }
 
 .close-modal {
