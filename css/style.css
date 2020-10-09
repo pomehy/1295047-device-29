@@ -2278,7 +2278,6 @@ img {
 }
 
 .write-us {
-
   width: 960px;
   height: 550px;
 
@@ -2352,7 +2351,7 @@ img {
 }
 
 .write-us__form textarea {
-  width: 100%;
+  width: 760px;
   min-height: 167px;
   padding-top: 16px;
   padding-right: 20px;
@@ -2381,7 +2380,6 @@ img {
 /* modal-map  */
 
 .modal-map {
-
   width: 960px;
   height: 560px;
 
