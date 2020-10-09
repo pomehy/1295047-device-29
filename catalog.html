@@ -39,7 +39,7 @@
         </div>
         <ul class="main-nav__list">
           <li class="main-nav__item sub-menu">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__link main-nav__link--dropdown" href="catalog.html">Каталог товаров</a>
             <div class="sub-menu-wrapper">
               <ul class="sub-menu__list">
                 <li class="sub-menu__item">
@@ -136,7 +136,7 @@
                   <label for="filter-color-red">Красный</label>
                 </li>
                 <li class="filter__item">
-                  <input class="visually-hidden filter__input-checkbox" type="checkbox" name="color-pink" id="filter-color-pink" disabled>
+                  <input class="visually-hidden filter__input-checkbox" type="checkbox" name="color-pink" id="filter-color-pink">
                   <label for="filter-color-pink">Розовый</label>
                 </li>
               </ul>
@@ -185,55 +185,55 @@
             <h4 class="visually-hidden">Отсортированные товары</h4>
             <ul class="products__list">
               <li class="products__item">
-                <div class="products-image-wrapper">
-                  <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-                  <div class="products-button-wrapper">
-                    <a class="button button-add-cart" href="#">В корзину</a>
-                    <a class="button-add-compare" href="#">Добавить к сравнению</a>
-                  </div>
-                </div>
                 <div class="products__description">
                   <a class="products__link" href="#">Любительская селфи-палка</a>
                   <p class="products__price">1 100 руб.</p>
                 </div>
-              </li>
-              <li class="products__item">
                 <div class="products-image-wrapper">
-                  <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+                  <img src="img/item-1.jpg" alt="Селфи-палка со смартфоном" width="360" height="380">
                   <div class="products-button-wrapper">
                     <a class="button button-add-cart" href="#">В корзину</a>
                     <a class="button-add-compare" href="#">Добавить к сравнению</a>
                   </div>
                 </div>
+              </li>
+              <li class="products__item">
                 <div class="products__description">
                   <a class="products__link" href="#">Профессиональная<br>селфи-палка</a>
                   <p class="products__price">1 500 руб.</p>
                 </div>
-              </li>
-              <li class="products__item">
                 <div class="products-image-wrapper">
-                  <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+                  <img src="img/item-2.jpg" alt="Селфи-палка с подвижным штативом и голубой кнопкой управления" width="360" height="380">
                   <div class="products-button-wrapper">
                     <a class="button button-add-cart" href="#">В корзину</a>
                     <a class="button-add-compare" href="#">Добавить к сравнению</a>
                   </div>
                 </div>
+              </li>
+              <li class="products__item">
                 <div class="products__description">
                   <a class="products__link" href="#">Непотопляемая<br>селфи-палка</a>
                   <p class="products__price">1 500 руб.</p>
                 </div>
+                <div class="products-image-wrapper">
+                  <img src="img/item-3.jpg" alt="Монопод с прорезиненной ручкой, ярким дизайном в черно-желтых цветах и ремешком на руку" width="360" height="380">
+                  <div class="products-button-wrapper">
+                    <a class="button button-add-cart" href="#">В корзину</a>
+                    <a class="button-add-compare" href="#">Добавить к сравнению</a>
+                  </div>
+                </div>
               </li>
               <li class="products__item products__item--new">
+                <div class="products__description">
+                  <a class="products__link" href="#">Селфи-палка «Следуй за мной»</a>
+                  <p class="products__price">1 900 руб.</p>
+                </div>
                 <div class="products-image-wrapper">
                   <img src="img/item-4.jpg" alt="Селфи-палка в виде руки" width="360" height="380">
                   <div class="products-button-wrapper">
                     <a class="button button-add-cart" href="#">В корзину</a>
                     <a class="button-add-compare" href="#">Добавить к сравнению</a>
                   </div>
-                </div>
-                <div class="products__description">
-                  <a class="products__link" href="#">Селфи-палка «Следуй за мной»</a>
-                  <p class="products__price">1 900 руб.</p>
                 </div>
               </li>
             </ul>
@@ -285,7 +285,6 @@
       <section class="main-footer__info">
         <h2 class="visually-hidden">Контакты и навигация</h2>
         <p class="main-footer__adress">г. Москва, ул. Строителей, 15</p>
-        <a class="main-footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         <ul class="footer-nav">
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="blank.html">Доставка</a>
@@ -297,24 +296,19 @@
             <a class="footer-nav__link" href="blank.html">Контакты</a>
           </li>
         </ul>
+        <a class="main-footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </section>
       <section class="main-footer__links social">
         <h2 class="visually-hidden">Ссылки на социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="#"><span class="visually-hidden">Facebook</span>
-              <img src="img/icon-facebook.svg" alt="Facebook" width="32" height="32">
-            </a>
+            <a class="social__link" href="#"><span class="visually-hidden">Facebook</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#"><span class="visually-hidden">Instagram</span>
-              <img src="img/icon-inst.svg" alt="Instagram" width="32" height="32">
-            </a>
+            <a class="social__link" href="#"><span class="visually-hidden">Instagram</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#"><span class="visually-hidden">Twitter</span>
-              <img src="img/icon-twitter.svg" alt="Twitter" width="32" height="32">
-            </a>
+            <a class="social__link" href="#"><span class="visually-hidden">Twitter</span></a>
           </li>
         </ul>
         <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">Перейти на лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов».</span>
