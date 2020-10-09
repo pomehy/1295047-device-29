@@ -1368,7 +1368,6 @@ img {
   background-color: var(--basic-grey-light);
 }
 
-
 .filter__title {
   position: relative;
 
@@ -1593,6 +1592,7 @@ img {
 .filter__input-checkbox:active + label::after {
   display: none;
 }
+
 
 .filter__input-checkbox:disabled + label::before,
 .filter__input-checkbox:disabled + label::after {
