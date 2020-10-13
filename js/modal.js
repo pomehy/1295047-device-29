@@ -7,6 +7,14 @@ const writeUsModal = document.querySelector('.write-us');
 const writeUsClose = document.querySelector('.write-us--close');
 
 const userName = writeUsModal.querySelector('[name=user-name]');
+const userEmail = writeUsModal.querySelector('[name=user-email]');
+const userText = writeUsModal.querySelector('[name=user-text]');
+
+const writeUsForm = writeUsModal.querySelector('form');
+const storageUserName = localStorage.getItem('user-name');
+
+const isStorageSupport = true;
+let storage = "";
 
 
 // для карты
@@ -26,10 +34,22 @@ mapModalClose.addEventListener('click', function(evt) {
 
 // для формы обратной связи
 
+
+try {
+  storage = localStorage.getItem("login");
+} catch (err) {
+  isStorageSupport = false;
+}
+
 writeUsLink.addEventListener('click', function(evt) {
   evt.preventDefault();
   writeUsModal.classList.add('modal-show');
-  userName.focus();
+  if (storageUserName) {
+    userName.value = storageUserName;
+    userEmail.focus();
+  } else {
+    userText.focus();
+  }
   console.log('открыто модальной окно с формой');
 });
 
@@ -38,6 +58,31 @@ writeUsClose.addEventListener('click', function(evt) {
   writeUsModal.classList.remove('modal-show');
   console.log('закрыто окно с формой');
 });
+
+
+writeUsForm.addEventListener('submit', function(evt) {
+  if (!userName || !userEmail || !userText) {
+    evt.preventDefault();
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem('user-name', userName.value);
+    }
+  }
+});
+
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (mapModal.classList.contains('modal-show')) {
+      evt.preventDefault();
+      mapModal.classList.remove('modal-show');
+    } else if (writeUsModal.classList.contains('modal-show')) {
+      evt.preventDefault();
+      writeUsModal.classList.remove('modal-show');
+    }
+  }
+});
+
 
 
 
