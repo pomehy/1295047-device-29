@@ -13,14 +13,14 @@
       </a>
       <nav class="main-nav">
         <div class="user-menu-wrapper">
-          <form class="main-nav__search search-form" action="#" method="POST">
+          <form class="main-nav__search search-form" action="#" method="GET">
             <label class="visually-hidden" for="search-form">Поиск по сайту</label>
             <input class="search-form__input" type="search" id="search-form" placeholder="Поиск по сайту">
             <button class="search-form__button" type="submit">Найти</button>
           </form>
           <ul class="user-menu">
             <li class="user-menu__item">
-              <a class="user-menu__link user-menu__login" href="#">Войти</a>
+              <a class="user-menu__link user-menu__login" href="login.html">Войти</a>
             </li>
             <li class="user-menu__item user-menu__item--hidden">
               <a class="user-menu__link user-menu__name" href="#">Валентин Петухов</a>
@@ -219,13 +219,13 @@
         <div class="service-slider-wrapper container">
           <ul class="service__list service-slider__nav">
             <li class="service__item service__item--active">
-              <a class="button service__link" href="#">Доставка</a>
+              <a class="button service__button" href="#">Доставка</a>
             </li>
             <li class="service__item">
-              <a class="button service__link " href="#">Гарантия</a>
+              <a class="button service__button " href="#">Гарантия</a>
             </li>
             <li class="service__item">
-              <a class="button service__link" href="#">Кредит</a>
+              <a class="button service__button" href="#">Кредит</a>
             </li>
           </ul>
           <ul class="service__description service-slider__list">
@@ -297,7 +297,7 @@
           <h2 class="contacts__title">Контакты</h2>
           <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.</p>
-          <a href="#">
+          <a class="contacts__map" href="#">
             <img src="img/map-1.jpg" alt="Местоположение интернет-магазина на карте" width="560" height="222">
           </a>
           <a class="button contacts__link" href="blank.html">Напишите нам</a>
@@ -391,6 +391,6 @@
       <button class="close-modal" type="button" aria-label="Закрыть"></button>
     </section>
 
-
+    <script src="js/scripts.js"></script>
   </body>
 </html>
