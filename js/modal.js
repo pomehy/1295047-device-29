@@ -1,3 +1,4 @@
+
 const mapLink = document.querySelector('.contacts__map');
 const mapModal = document.querySelector('.map-modal');
 const mapModalClose = document.querySelector('.map-modal--close');
@@ -22,13 +23,11 @@ let storage = "";
 mapLink.addEventListener('click', function(evt) {
   evt.preventDefault();
   mapModal.classList.add('modal-show');
-  console.log('открыто модальной окно с картой');
 });
 
 mapModalClose.addEventListener('click', function(evt) {
   evt.preventDefault();
   mapModal.classList.remove('modal-show');
-  console.log('закрыто окно с картой');
 });
 
 
@@ -50,19 +49,21 @@ writeUsLink.addEventListener('click', function(evt) {
   } else {
     userText.focus();
   }
-  console.log('открыто модальной окно с формой');
 });
 
 writeUsClose.addEventListener('click', function(evt) {
   evt.preventDefault();
   writeUsModal.classList.remove('modal-show');
-  console.log('закрыто окно с формой');
+  writeUsModal.classList.remove('modal-error');
 });
 
 
 writeUsForm.addEventListener('submit', function(evt) {
-  if (!userName || !userEmail || !userText) {
+  if (!userName.value || !userEmail.value || !userText.value) {
     evt.preventDefault();
+    writeUsModal.classList.remove("modal-error");
+    writeUsModal.offsetWidth = writeUsModal.offsetWidth;
+    writeUsModal.classList.add('modal-error');
   } else {
     if (isStorageSupport) {
       localStorage.setItem('user-name', userName.value);
@@ -79,6 +80,7 @@ window.addEventListener('keydown', function (evt) {
     } else if (writeUsModal.classList.contains('modal-show')) {
       evt.preventDefault();
       writeUsModal.classList.remove('modal-show');
+      writeUsModal.classList.remove('modal-error');
     }
   }
 });
