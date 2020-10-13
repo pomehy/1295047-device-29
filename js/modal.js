@@ -1,10 +1,12 @@
+const mapLink = document.querySelector('.contacts__map');
+const mapModal = document.querySelector('.map-modal');
+const mapModalClose = document.querySelector('.map-modal--close');
+
 const writeUsLink = document.querySelector('.contacts__link');
 const writeUsModal = document.querySelector('.write-us');
 const writeUsClose = document.querySelector('.write-us--close');
 
-const mapLink = document.querySelector('.contacts__map');
-const mapModal = document.querySelector('.map-modal');
-const mapModalClose = document.querySelector('.map-modal--close');
+const userName = writeUsModal.querySelector('[name=user-name]');
 
 
 // для карты
@@ -27,7 +29,8 @@ mapModalClose.addEventListener('click', function(evt) {
 writeUsLink.addEventListener('click', function(evt) {
   evt.preventDefault();
   writeUsModal.classList.add('modal-show');
-  console.log('открыто модальной окно с картой');
+  userName.focus();
+  console.log('открыто модальной окно с формой');
 });
 
 writeUsClose.addEventListener('click', function(evt) {
