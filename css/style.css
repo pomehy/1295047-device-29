@@ -546,7 +546,7 @@ img {
   display: grid;
   grid-template-columns: auto auto max-content;
   column-gap: 40px;
-  width: 530px;
+  width: 525px;
   margin-top: 27px;
   margin-right: 0;
   margin-bottom: 42px;
@@ -636,8 +636,8 @@ img {
   content: '';
 
   position: absolute;
-  top: 3px;
-  right: -25px;
+  top: 4px;
+  right: -27px;
 
   width: 12px;
   height: 12px;
@@ -658,7 +658,7 @@ img {
 
 .breadcrumbs__link {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 19px;
   color: var(--basic-black);
 
   opacity: 0.3;
@@ -869,7 +869,7 @@ img {
 
 .slider__controls {
   position: absolute;
-  bottom: 138px;
+  bottom: 146px;
   right: 128px;
 
   display: flex;
@@ -1075,7 +1075,7 @@ img {
   margin-bottom: 21px;
 }
 
-.service__link {
+.service__button {
   display: block;
   width: 160px;
   box-sizing: border-box;
@@ -1088,11 +1088,11 @@ img {
   color: var(--special-yellow-light);
 }
 
-.service__item--active .service__link {
+.service__item--active .service__button {
   color: var(--special-yellow-light);
 }
 
-.service__item--active .service__link::before {
+.service__item--active .service__button::before {
   display: none;
 }
 
@@ -1423,7 +1423,7 @@ img {
 .filter__form legend {
   display: block;
   width: 100%;
-  padding-top: 16px;
+  padding-top: 15px;
 
   font-family: 'Gilroy', Arial, sans-serif;
   font-style: normal;
@@ -1440,7 +1440,7 @@ img {
 .filter__form fieldset {
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   margin-left: 0;
   padding: 0;
 
@@ -1532,7 +1532,7 @@ img {
   left: 114px;
 }
 .filter__form .filter-color {
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 }
 
 .filter__list {
@@ -2113,7 +2113,7 @@ img {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 66px;
+  margin-bottom: 67px;
 }
 
 .main-footer__adress {
@@ -2177,7 +2177,7 @@ img {
 
 .social::before {
   position: absolute;
-  top: 14px;
+  top: 12px;
   left: 0;
 
   width: 80px;
@@ -2379,7 +2379,7 @@ img {
 
 /* modal-map  */
 
-.modal-map {
+.map-modal {
   width: 960px;
   height: 560px;
 
@@ -2389,7 +2389,7 @@ img {
   box-sizing: border-box;
 }
 
-.modal-map iframe {
+.map-modal iframe {
   border: none;
 }
 
@@ -2430,4 +2430,55 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.7;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
