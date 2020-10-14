@@ -1281,6 +1281,8 @@ img {
   display: inline-block;
   width: 260px;
   margin-top: 68px;
+
+  vertical-align: top;
 }
 
 /* contacts */
@@ -1322,6 +1324,8 @@ img {
   display: inline-block;
   width: 260px;
   margin-top: 68px;
+
+  vertical-align: top;
 }
 
 /* catalog */
