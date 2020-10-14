@@ -1,4 +1,3 @@
-
 const mapLink = document.querySelector('.contacts__map');
 const mapModal = document.querySelector('.map-modal');
 const mapModalClose = document.querySelector('.map-modal--close');
@@ -15,7 +14,7 @@ const writeUsForm = writeUsModal.querySelector('form');
 const storageUserName = localStorage.getItem('user-name');
 
 const isStorageSupport = true;
-let storage = "";
+let storage = '';
 
 
 // для карты
@@ -61,7 +60,7 @@ writeUsClose.addEventListener('click', function(evt) {
 writeUsForm.addEventListener('submit', function(evt) {
   if (!userName.value || !userEmail.value || !userText.value) {
     evt.preventDefault();
-    writeUsModal.classList.remove("modal-error");
+    writeUsModal.classList.remove('modal-error');
     writeUsModal.offsetWidth = writeUsModal.offsetWidth;
     writeUsModal.classList.add('modal-error');
   } else {
