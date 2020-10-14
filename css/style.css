@@ -1555,7 +1555,7 @@ img {
 }
 
 .filter__input-checkbox + label::before {
-  content: "";
+  content: '';
 
   position: absolute;
   left: 0;
@@ -1568,7 +1568,7 @@ img {
 }
 
 .filter__input-checkbox:checked + label::after {
-  content: "";
+  content: '';
 
   position: absolute;
   top: 5px;
@@ -1608,7 +1608,7 @@ img {
 }
 
 .filter__input-radio + label::before {
-  content: "";
+  content: '';
 
   position: absolute;
   left: 0;
@@ -1623,7 +1623,7 @@ img {
 
 .filter__input-radio:checked + label::after,
 .filter__input-radio:active + label::after {
-  content: "";
+  content: '';
 
   position: absolute;
   top: 6px;
