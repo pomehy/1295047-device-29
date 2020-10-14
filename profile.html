@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Девайс</title>
+</head>
+<body class="page-body">
+  <header class="page-header main-header">
+      <a class="logo main-header__logo" href="index.html">
+        <img src="img/device-logo-black.svg" alt="логотип Интернет-магазина DEVICE" width="163" height="35">
+      </a>
+      <nav class="main-nav">
+        <div class="user-menu-wrapper">
+          <form class="main-nav__search search-form" action="#" method="GET">
+            <label class="visually-hidden" for="search-form">Поиск по сайту</label>
+            <input class="search-form__input" type="search" id="search-form" placeholder="Поиск по сайту">
+            <button class="search-form__button" type="button">Найти</button>
+          </form>
+          <ul class="user-menu user-menu--authorization">
+            <li class="user-menu__item user-menu__item--hidden">
+              <a class="user-menu__link user-menu__login" href="#">Войти</a>
+            </li>
+            <li class="user-menu__item">
+              <a class="user-menu__link user-menu__name" href="profile.html">Валентин Петухов</a>
+            </li>
+            <li class="user-menu__item">
+              <a class="user-menu__link user-menu__logout" href="#">Выйти</a>
+            </li>
+            <li class="user-menu__item">
+              <a class="user-menu__link user-menu__compare" href="#">Сравнить</a>
+            </li>
+            <li class="user-menu__item">
+              <a class="user-menu__link user-menu__cart" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item sub-menu">
+            <a class="main-nav__link main-nav__link--dropdown" href="catalog.html">Каталог товаров</a>
+            <div class="sub-menu-wrapper">
+              <ul class="sub-menu__list">
+                <li class="sub-menu__item">
+                  <a class="sub-menu__link" href="catalog.html">Виртуальная реальность</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a class="sub-menu__link" href="catalog.html">Фитнес-браслеты</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a class="sub-menu__link" href="catalog.html">Квадрокоптер</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a class="sub-menu__link" href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a class="sub-menu__link" href="catalog.html">Умные часы</a>
+                </li>
+                <li class="sub-menu__item">
+                  <a class="sub-menu__link" href="catalog.html">Экшн-камеры</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="blank.html">Доставка</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="blank.html">Гарантия</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="blank.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <main class="page-main">
+    <section class="page-main__header">
+      <h1 class="page-main__title">Профайл</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="profile.html">Профайл</a>
+        </li>
+      </ul>
+      <p>Пока тут нет информации ! Перейдите на <a href="index.html">главную страницу</a></p>
+    </section>
+  </main>
+  <footer class="page-footer main-footer">
+    <div class="container">
+      <section class="main-footer__user-menu">
+        <h2 class="visually-hidden">Пользовательское меню</h2>
+        <a class="logo logo--footer" href="index.html">
+          <img src="img/device-logo-yellow.svg" alt="логотип желтого цвета Интернет-магазина DEVICE" width="165" height="35">
+        </a>
+        <ul class="user-menu user-menu--footer user-menu--authorization">
+          <li class="user-menu__item user-menu__item--hidden">
+            <a class="user-menu__link user-menu__login" href="#">Войти</a>
+          </li>
+          <li class="user-menu__item">
+            <a class="user-menu__link user-menu__name" href="profile.html">Валентин Петухов</a>
+          </li>
+          <li class="user-menu__item">
+            <a class="user-menu__link user-menu__logout" href="#">Выйти</a>
+          </li>
+          <li class="user-menu__item">
+            <a class="user-menu__link user-menu__compare" href="#">Сравнить</a>
+          </li>
+          <li class="user-menu__item">
+            <a class="user-menu__link user-menu__cart" href="#">Корзина</a>
+          </li>
+        </ul>
+      </section>
+      <section class="main-footer__info">
+        <h2 class="visually-hidden">Контакты и навигация</h2>
+        <p class="main-footer__adress">г. Москва, ул. Строителей, 15</p>
+        <ul class="footer-nav">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="blank.html">Доставка</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="blank.html">Гарантия</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="blank.html">Контакты</a>
+          </li>
+        </ul>
+        <a class="main-footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      </section>
+      <section class="main-footer__links social">
+        <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#"><span class="visually-hidden">Facebook</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#"><span class="visually-hidden">Instagram</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#"><span class="visually-hidden">Twitter</span></a>
+          </li>
+        </ul>
+        <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">Перейти на лендинг интенсива «HTML и CSS. Профессиональная вёрстка сайтов».</span>
+          <img src="img/htmlacademy-logo.svg" alt="Логотип htmlacademy" width="27" height="34">
+        </a>
+      </section>
+    </div>
+  </footer>
+</body>
+
+</html>
