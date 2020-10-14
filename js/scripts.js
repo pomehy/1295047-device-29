@@ -34,7 +34,7 @@ mapModalClose.addEventListener('click', function(evt) {
 
 
 try {
-  storage = localStorage.getItem("login");
+  storage = localStorage.getItem('user-name');
 } catch (err) {
   isStorageSupport = false;
 }
