@@ -16,13 +16,16 @@ const storageUserName = localStorage.getItem('user-name');
 const isStorageSupport = true;
 let storage = '';
 
-
 let promoSliderItems = document.querySelectorAll('.slider__item');
 let promoSliderButtons = document.querySelectorAll('.slider__button');
 
 let serviceSliderItems = document.querySelectorAll('.service-slider__item');
-let serviceSliderButtons = document.querySelectorAll('.service__button');
+
 let serviceItem = document.querySelectorAll('.service__item');
+let serviceLinks = document.querySelectorAll('.service__button');
+
+let slideControls = document.querySelector('.slider__controls');
+let sliderAdvControls = document.querySelector('.service__list');
 
 // для карты
 
@@ -77,7 +80,6 @@ writeUsForm.addEventListener('submit', function(evt) {
   }
 });
 
-
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     if (mapModal.classList.contains('modal-show')) {
@@ -93,69 +95,42 @@ window.addEventListener('keydown', function (evt) {
 
 
 // слайдер с товарами
+slideControls.addEventListener('click', function(evt) {
+  if(evt.target.classList.contains('slider__button')) {
+    let array = Array.from(promoSliderButtons);
+    let target = evt.target;
+    let index = array.indexOf(target);
 
-promoSliderButtons[0].addEventListener('click', function(evt) {
-  evt.preventDefault();
-  promoSliderItems[0].classList.add('slider__item--active');
-  promoSliderItems[1].classList.remove('slider__item--active');
-  promoSliderItems[2].classList.remove('slider__item--active');
-
-  promoSliderButtons[0].classList.add('slider__button--active');
-  promoSliderButtons[1].classList.remove('slider__button--active');
-  promoSliderButtons[2].classList.remove('slider__button--active');
+    array.forEach(function(item, i, arr) {
+      if(i === index) {
+        item.classList.add('slider__button--active');
+        promoSliderItems[i].classList.add('slider__item--active');
+      } else {
+        item.classList.remove('slider__button--active');
+        promoSliderItems[i].classList.remove('slider__item--active');
+      }
+    });
+  }
 });
-
-promoSliderButtons[1].addEventListener('click', function(evt) {
-  evt.preventDefault();
-  promoSliderItems[1].classList.add('slider__item--active');
-  promoSliderItems[0].classList.remove('slider__item--active');
-  promoSliderItems[2].classList.remove('slider__item--active');
-  promoSliderButtons[1].classList.add('slider__button--active');
-  promoSliderButtons[0].classList.remove('slider__button--active');
-  promoSliderButtons[2].classList.remove('slider__button--active');
-});
-
-promoSliderButtons[2].addEventListener('click', function(evt) {
-  evt.preventDefault();
-  promoSliderItems[2].classList.add('slider__item--active');
-  promoSliderItems[0].classList.remove('slider__item--active');
-  promoSliderItems[1].classList.remove('slider__item--active');
-  promoSliderButtons[2].classList.add('slider__button--active');
-  promoSliderButtons[0].classList.remove('slider__button--active');
-  promoSliderButtons[1].classList.remove('slider__button--active');
-});
-
 
 // слайдер преимуществ
 
-serviceSliderButtons[0].addEventListener('click', function(evt) {
-  evt.preventDefault();
-  serviceSliderItems[0].classList.add('service-slider__item--active');
-  serviceSliderItems[1].classList.remove('service-slider__item--active');
-  serviceSliderItems[2].classList.remove('service-slider__item--active');
+sliderAdvControls.addEventListener('click', function(evt) {
+  if(evt.target.classList.contains('service__button')) {
+    event.preventDefault();
+    let array = Array.from(serviceLinks);
+    let anotherArray = Array.from(serviceItem);
+    let target = evt.target;
+    let index = array.indexOf(target);
 
-  serviceItem[0].classList.add('service__item--active');
-  serviceItem[1].classList.remove('service__item--active');
-  serviceItem[2].classList.remove('service__item--active');
+    anotherArray.forEach(function(item, i, arr) {
+      if(i === index) {
+        item.classList.add('service__item--active');
+        serviceSliderItems[i].classList.add('service-slider__item--active');
+      } else {
+        item.classList.remove('service__item--active');
+        serviceSliderItems[i].classList.remove('service-slider__item--active');
+      }
+    });
+  }
 });
-
-serviceSliderButtons[1].addEventListener('click', function(evt) {
-  evt.preventDefault();
-  serviceSliderItems[1].classList.add('service-slider__item--active');
-  serviceSliderItems[0].classList.remove('service-slider__item--active');
-  serviceSliderItems[2].classList.remove('service-slider__item--active');
-  serviceItem[1].classList.add('service__item--active');
-  serviceItem[0].classList.remove('service__item--active');
-  serviceItem[2].classList.remove('service__item--active');
-});
-
-serviceSliderButtons[2].addEventListener('click', function(evt) {
-  evt.preventDefault();
-  serviceSliderItems[2].classList.add('service-slider__item--active');
-  serviceSliderItems[0].classList.remove('service-slider__item--active');
-  serviceSliderItems[1].classList.remove('service-slider__item--active');
-  serviceItem[2].classList.add('service__item--active');
-  serviceItem[0].classList.remove('service__item--active');
-  serviceItem[1].classList.remove('service__item--active');
-});
-
